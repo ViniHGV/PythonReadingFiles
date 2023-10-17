@@ -1,0 +1,16 @@
+12100;Areia a granel;m3;P;17.400;2.30;38.80;
+12200;Pedra nº 2 a granel;m3;P;25.000;23.70;13.58;
+12300;Barra de Aço;kg;P;16.090;17.48;12.75;
+12400;Manta Asfáltica 50cm;m;P;8.700;14.95;9.10;
+12500;Manta Asfáltica 80cm;m;P;3.750;21.32;18.54;
+12600;Cimento a granel;kg;P;4.000;34.80;8.50;
+12700;Cal a granel;kg;P;7.800;3.90;16.80;
+12800;Pedrisco;m3;P;5.500;7.85;23.65;
+15100;Cimento CPII;saco;U;18;5.60;34.90;
+15200;Tinta Acrílica branca 3,6L;lata;U;23;61.90;8.15;
+15300;Verniz neutro 3,6L;lata;U;155;5.57;31.65;
+15400;Ralo 15cm;peça;U;414;6.45;23.90;
+15500;Torneira jardim;peça;U;31;12.82;16.44;
+15600;Tubo PVC branco 2pol;m;U;8;8.25;18.67;
+15700;Tubo PVC branco 1,5pol;m;U;210;6.44;23.83;
+15800;Bloco cimento 20cm;peça;U;2;3.95;28.47;
