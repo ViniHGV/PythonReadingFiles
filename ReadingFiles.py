@@ -49,7 +49,7 @@ for i in range(len(CodProduto)):
     """
     cursor.execute(Sql)
 
-print("\nOs valores foram inseridos na tabela produtos🚀\n")
+print("\nOs valores foram inseridos na tabela Produtos🚀\n")
 
 
 AnoVenda = []
@@ -64,9 +64,9 @@ s = arq.readline().rstrip()
 while s != '':
     s = s.split(';')
     AnoVenda.append(int(s[0]))
-    MesVenda.append(str(s[1]))
-    DiaVenda.append(str(s[2]))
-    CodigoProduto.append(str(s[3]))
+    MesVenda.append(int(s[1]))
+    DiaVenda.append(int(s[2]))
+    CodigoProduto.append(int(s[3]))
     QuantidadeVendida.append(float(s[4]))
     PrecoVenda.append(float(s[5]))
     s = arq.readline().rstrip()
@@ -84,6 +84,18 @@ SQL = """
   )
 """
 cursor.execute(SQL)
+print("\nTabela Vendas Criada com sucesso🚀\n")
+
+
+for i in range(len(CodigoProduto)):
+    Sql = f"""
+      insert into Vendas (anoVenda, mesVenda, diaVenda, codProduto, qtdVendida, precoVenda)
+      values ({AnoVenda[i]},{MesVenda[i]}, {DiaVenda[i]}, {
+        CodigoProduto[i]}, {QuantidadeVendida[i]}, {PrecoVenda[i]})
+    """
+    cursor.execute(Sql)
+
+print("\nOs valores foram inseridos na tabela Vendas🚀\n")
 
 connector.commit()
 cursor.close()
