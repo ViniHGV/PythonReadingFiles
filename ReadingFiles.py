@@ -37,8 +37,23 @@ SQL = """
   nomeProduto string,
   unidadeComercializacao string,
   modoControleEstoque string,
-  quantidadeEstoque numeric
+  quantidadeEstoque numeric,
+  precoUnitario numeric,
+  MargemLucro numeric
   )
 """
 cursor.execute(SQL)
-#  for i in range(len(CodProduto)):
+
+for i in range(len(CodProduto)):
+    Sql = f"""
+      insert into Produtos (nomeProduto, unidadeComercializacao, modoControleEstoque, quantidadeEstoque, precoUnitario, MargemLucro)
+      values ('{NomeProduto[i]}', '{UnidadeComercializacao[i]}', '{
+        ModoControleEstoque[i]}', {QtdEstoque[i]}, {PrecoUnitário[i]}, {MargemLucro[i]})
+    """
+    cursor.execute(Sql)
+
+connector.commit()
+cursor.close()
+connector.close()
+
+print("Programa Finzalizado")
